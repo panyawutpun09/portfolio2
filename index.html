@@ -1,388 +1,161 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | ปัญญาวุฒิ ไสยศาสตร์</title>
-  <meta name="description" content="Portfolio  ปัญญาวุฒิ ไสยศาสตร์ นักเรียนชั้นมัธยมศึกษาปีที่ 6 โรงเรียนพานทอง" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | ปัญญาวุฒิ ไสยศาสตร์</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container nav">
-      <a href="#home" class="logo">Panyawut<span> Portfolio</span></a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<header>
 
-      <nav id="navMenu">
-        <ul class="nav-links">
-          <li><a href="#home">หน้าแรก</a></li>
-          <li><a href="#about">เกี่ยวกับฉัน</a></li>
-          <li><a href="#education">การศึกษา</a></li>
-          <li><a href="#skills">ทักษะ</a></li>
-          <li><a href="#projects">ผลงาน</a></li>
-          <li><a href="#activities">กิจกรรม</a></li>
-          <li><a href="#contact">ติดต่อ</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<div class="logo">
+Portfolio
+</div>
 
-  <!-- Hero / Home -->
-  <section class="hero" id="home">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <p class="hero-tag">Portfolio Website</p>
-        <h1>สวัสดีครับ ผม <span>ปัญญาวุฒิ ไสยศาสตร์</span></h1>
-        <h2>นักเรียนชั้นมัธยมศึกษาปีที่ 6 โรงเรียนพานทอง</h2>
-        <p class="hero-desc">
-          เว็บไซต์ Portfolio นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว ผลงาน กิจกรรม
-          ทักษะ และความสนใจทางด้านการเรียนรู้ของผม เพื่อใช้เป็นพื้นที่นำเสนอศักยภาพ
-          และเป้าหมายในการศึกษาต่อในอนาคต
-        </p>
+<nav>
 
-        <div class="hero-buttons">
-          <a href="#about" class="btn btn-primary">รู้จักฉันเพิ่มเติม</a>
-          <a href="#contact" class="btn btn-outline">ติดต่อฉัน</a>
-        </div>
-      </div>
+<ul>
 
-      <div class="hero-image">
-        <div class="profile-card">
-          <div class="profile-avatar">
-            <!-- แทนรูปโปรไฟล์ไว้ก่อน -->
-            <img src="https://via.placeholder.com/400x500?text=Your+Photo" alt="รูปโปรไฟล์ของปัญญาวุฒิ">
-          </div>
-          <div class="profile-info">
-            <h3>ปัญญาวุฒิ ไสยศาสตร์</h3>
-            <p>นักเรียนระดับชั้น ม.6</p>
-            <p>โรงเรียนพานทอง</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<li><a href="index.html" class="active">หน้าหลัก</a></li>
 
-  <!-- About -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-title">
-        <p>About Me</p>
-        <h2>เกี่ยวกับฉัน</h2>
-      </div>
+<li><a href="about.html">ประวัติ</a></li>
 
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>ข้อมูลส่วนตัว</h3>
-          <ul class="info-list">
-            <li><strong>ชื่อ-นามสกุล:</strong> ปัญญาวุฒิ ไสยศาสตร์</li>
-            <li><strong>ระดับชั้น:</strong> มัธยมศึกษาปีที่ 6</li>
-            <li><strong>สถานศึกษา:</strong> โรงเรียนพานทอง</li>
-            <li><strong>บทบาทปัจจุบัน:</strong> นักเรียนที่กำลังพัฒนา Portfolio และเว็บไซต์ส่วนตัว</li>
-          </ul>
-        </div>
+<li><a href="education.html">การศึกษา</a></li>
 
-        <div class="about-card">
-          <h3>เป้าหมายของฉัน</h3>
-          <p>
-            ผมมีความสนใจในการพัฒนาตนเองผ่านการเรียนรู้ การทำกิจกรรม และการสร้างผลงาน
-            โดยเฉพาะการใช้เทคโนโลยี เว็บไซต์ และสื่อดิจิทัลเพื่อสื่อสารตัวตนและความสามารถ
-            เว็บไซต์นี้จึงเป็นอีกหนึ่งพื้นที่ที่ผมใช้ในการนำเสนอความตั้งใจ ความสามารถ
-            และประสบการณ์ที่ได้สะสมตลอดช่วงมัธยมศึกษา
-          </p>
-        </div>
+<li><a href="activities.html">กิจกรรม</a></li>
 
-        <div class="about-card">
-          <h3>จุดเด่นของฉัน</h3>
-          <div class="pill-wrap">
-            <span class="pill">มีความรับผิดชอบ</span>
-            <span class="pill">พร้อมเรียนรู้สิ่งใหม่</span>
-            <span class="pill">สนใจเทคโนโลยี</span>
-            <span class="pill">ทำงานเป็นทีมได้</span>
-            <span class="pill">มีความคิดสร้างสรรค์</span>
-            <span class="pill">ตั้งใจพัฒนาตัวเอง</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<li><a href="projects.html">ผลงาน</a></li>
 
-  <!-- Education -->
-  <section class="section section-alt" id="education">
-    <div class="container">
-      <div class="section-title">
-        <p>Education</p>
-        <h2>ประวัติการศึกษา</h2>
-      </div>
+</ul>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>ระดับมัธยมศึกษาตอนปลาย</h3>
-            <p class="timeline-school">โรงเรียนพานทอง</p>
-            <p>
-              กำลังศึกษาอยู่ในระดับชั้นมัธยมศึกษาปีที่ 6 โดยมุ่งเน้นการพัฒนาความรู้
-              ทักษะทางวิชาการ และประสบการณ์ผ่านกิจกรรมต่าง ๆ ทั้งในและนอกห้องเรียน
-            </p>
-          </div>
-        </div>
+</nav>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>เส้นทางการเตรียมความพร้อมสู่อนาคต</h3>
-            <p class="timeline-school">Portfolio / Skills / Activities</p>
-            <p>
-              พัฒนาผลงานส่วนตัว ฝึกทักษะด้านเทคโนโลยี การสื่อสาร และการจัดทำ Portfolio
-              เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อและการเติบโตในสายที่สนใจ
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+</header>
 
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-title">
-        <p>Skills</p>
-        <h2>ทักษะและความสามารถ</h2>
-      </div>
+<section class="hero">
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>ทักษะด้านการเรียนรู้</h3>
-          <p>สามารถเรียนรู้สิ่งใหม่ได้อย่างรวดเร็ว มีความตั้งใจ และพร้อมพัฒนาตัวเองอยู่เสมอ</p>
-        </div>
+<div class="hero-left">
 
-        <div class="skill-card">
-          <h3>การทำงานเป็นทีม</h3>
-          <p>สามารถทำงานร่วมกับผู้อื่น รับฟังความคิดเห็น และช่วยกันแก้ปัญหาเพื่อให้งานสำเร็จ</p>
-        </div>
+<h3>สวัสดีครับ 👋</h3>
 
-        <div class="skill-card">
-          <h3>การใช้เทคโนโลยีเบื้องต้น</h3>
-          <p>สนใจการใช้งานเว็บไซต์ เครื่องมือดิจิทัล และการนำเทคโนโลยีมาพัฒนาผลงานของตนเอง</p>
-        </div>
+<h1>นายปัญญาวุฒิ ไสยศาสตร์</h1>
 
-        <div class="skill-card">
-          <h3>ความรับผิดชอบ</h3>
-          <p>มีวินัย รับผิดชอบต่อหน้าที่ และสามารถวางแผนงานให้เสร็จตามเวลาที่กำหนด</p>
-        </div>
-      </div>
+<h2>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h2>
 
-      <div class="progress-area">
-        <div class="progress-item">
-          <div class="progress-top">
-            <span>การสื่อสารและการนำเสนอ</span>
-            <span>85%</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill w85"></div></div>
-        </div>
+<p>
 
-        <div class="progress-item">
-          <div class="progress-top">
-            <span>การทำงานร่วมกับผู้อื่น</span>
-            <span>88%</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill w88"></div></div>
-        </div>
+ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
 
-        <div class="progress-item">
-          <div class="progress-top">
-            <span>ความคิดสร้างสรรค์</span>
-            <span>80%</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill w80"></div></div>
-        </div>
+เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
 
-        <div class="progress-item">
-          <div class="progress-top">
-            <span>การใช้งานเทคโนโลยี / เว็บไซต์</span>
-            <span>75%</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill w75"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
+ประวัติการศึกษา ผลงาน กิจกรรม และเกียรติบัตร
 
-  <!-- Projects -->
-  <section class="section section-alt" id="projects">
-    <div class="container">
-      <div class="section-title">
-        <p>Projects</p>
-        <h2>ผลงานและโครงงาน</h2>
-      </div>
+เพื่อประกอบการศึกษาต่อในระดับอุดมศึกษา
 
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-image">
-            <img src="https://via.placeholder.com/600x350?text=Project+1" alt="ผลงานชิ้นที่ 1">
-          </div>
-          <div class="project-body">
-            <h3>เว็บไซต์ Portfolio ส่วนตัว</h3>
-            <p>
-              พัฒนาเว็บไซต์ Portfolio เพื่อรวบรวมข้อมูลส่วนตัว ผลงาน กิจกรรม และทักษะ
-              โดยออกแบบให้ใช้งานง่าย สวยงาม และเหมาะกับการนำเสนอในรูปแบบออนไลน์
-            </p>
-            <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>GitHub</span>
-            </div>
-          </div>
-        </article>
+</p>
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="https://via.placeholder.com/600x350?text=Project+2" alt="ผลงานชิ้นที่ 2">
-          </div>
-          <div class="project-body">
-            <h3>โครงงานหรือชิ้นงานในโรงเรียน</h3>
-            <p>
-              พื้นที่สำหรับใส่ผลงานจริงของคุณ เช่น โครงงานวิทยาศาสตร์ งานนำเสนอ งานแข่งขัน
-              หรือผลงานที่เคยทำร่วมกับเพื่อนและครู
-            </p>
-            <div class="project-tags">
-              <span>School Project</span>
-              <span>Presentation</span>
-              <span>Teamwork</span>
-            </div>
-          </div>
-        </article>
+<div class="button-group">
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="https://via.placeholder.com/600x350?text=Project+3" alt="ผลงานชิ้นที่ 3">
-          </div>
-          <div class="project-body">
-            <h3>ผลงานที่อยากพัฒนาต่อ</h3>
-            <p>
-              ส่วนนี้สามารถใช้แสดงเป้าหมายหรือโปรเจกต์ในอนาคต เช่น เว็บไซต์เพิ่มเติม
-              แอปพลิเคชันเล็ก ๆ หรือผลงานด้านการออกแบบและเทคโนโลยี
-            </p>
-            <div class="project-tags">
-              <span>Future Project</span>
-              <span>Creative</span>
-              <span>Development</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+<a href="about.html" class="btn">เริ่มต้น</a>
 
-  <!-- Activities -->
-  <section class="section" id="activities">
-    <div class="container">
-      <div class="section-title">
-        <p>Activities</p>
-        <h2>กิจกรรมและเกียรติบัตร</h2>
-      </div>
+<a href="projects.html" class="btn2">ผลงานของฉัน</a>
 
-      <div class="activities-grid">
-        <div class="activity-card">
-          <h3>กิจกรรมในโรงเรียน</h3>
-          <p>
-            สามารถใส่ข้อมูลกิจกรรมที่เคยเข้าร่วม เช่น กิจกรรมชมรม งานวันวิชาการ
-            การแข่งขัน หรือกิจกรรมจิตอาสา
-          </p>
-        </div>
+</div>
 
-        <div class="activity-card">
-          <h3>การแข่งขัน / อบรม</h3>
-          <p>
-            เพิ่มรายละเอียดการอบรม ค่ายวิชาการ หรือการแข่งขันที่คุณเคยเข้าร่วม
-            พร้อมระบุบทบาทและสิ่งที่ได้เรียนรู้
-          </p>
-        </div>
+</div>
 
-        <div class="activity-card">
-          <h3>เกียรติบัตรและความภาคภูมิใจ</h3>
-          <p>
-            ใช้แสดงรางวัล เกียรติบัตร หรือความสำเร็จที่สะท้อนความตั้งใจ
-            ความสามารถ และการพัฒนาตนเอง
-          </p>
-        </div>
-      </div>
+<div class="hero-right">
 
-      <div class="quote-box">
-        <p>
-          “ทุกกิจกรรมและทุกผลงาน คือก้าวเล็ก ๆ ที่ช่วยพัฒนาตัวตน ทักษะ
-          และความพร้อมสำหรับอนาคต”
-        </p>
-      </div>
-    </div>
-  </section>
+<img src="images/profile.png" alt="Profile">
 
-  <!-- Contact -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <div class="section-title">
-        <p>Contact</p>
-        <h2>ติดต่อฉัน</h2>
-      </div>
+</div>
 
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>ช่องทางการติดต่อ</h3>
-          <p>
-            หากต้องการติดต่อเพื่อสอบถามข้อมูลเพิ่มเติมเกี่ยวกับ Portfolio
-            ผลงาน หรือประวัติส่วนตัว สามารถติดต่อผ่านช่องทางด้านล่างได้
-          </p>
+</section>
 
-          <ul class="contact-list">
-            <li><strong>ชื่อ:</strong> ปัญญาวุฒิ ไสยศาสตร์</li>
-            <li><strong>ระดับชั้น:</strong> มัธยมศึกษาปีที่ 6</li>
-            <li><strong>โรงเรียน:</strong> โรงเรียนพานทอง</li>
-            <li><strong>Email:</strong> your-email@example.com</li>
-            <li><strong>Facebook:</strong> ใส่ลิงก์ Facebook ของคุณ</li>
-            <li><strong>GitHub:</strong> ใส่ลิงก์ GitHub ของคุณ</li>
-          </ul>
-        </div>
+<section class="about-short">
 
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <label for="name">ชื่อผู้ติดต่อ</label>
-            <input type="text" id="name" name="name" placeholder="กรอกชื่อของคุณ" required />
-          </div>
+<h2>แนะนำตัว</h2>
 
-          <div class="form-group">
-            <label for="email">อีเมล</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required />
-          </div>
+<p>
 
-          <div class="form-group">
-            <label for="message">ข้อความ</label>
-            <textarea id="message" name="message" rows="5" placeholder="พิมพ์ข้อความที่ต้องการส่ง..." required></textarea>
-          </div>
+ผมมีความสนใจด้านเทคโนโลยี การพัฒนาเว็บไซต์
 
-          <button type="submit" class="btn btn-primary btn-full">ส่งข้อความ</button>
-          <p class="form-note">* ฟอร์มนี้เป็นตัวอย่างหน้าเว็บ หากต้องการให้ส่งอีเมลจริง ผมช่วยต่อระบบให้ได้ในขั้นถัดไป</p>
-        </form>
-      </div>
-    </div>
-  </section>
+และการเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Portfolio of ปัญญาวุฒิ ไสยศาสตร์ | โรงเรียนพานทอง</p>
-      <a href="#home" class="back-top">กลับขึ้นด้านบน ↑</a>
-    </div>
-  </footer>
+ชื่นชอบการทำงานเป็นทีม มีความรับผิดชอบ
 
-  <script src="script.js"></script>
+และพร้อมพัฒนาตนเองเพื่อก้าวสู่อนาคต
+
+</p>
+
+</section>
+
+<section class="skills">
+
+<h2>ทักษะของฉัน</h2>
+
+<div class="skill-box">
+
+<div class="card">
+
+<h3>HTML</h3>
+
+<p>สามารถสร้างเว็บไซต์พื้นฐานได้</p>
+
+</div>
+
+<div class="card">
+
+<h3>CSS</h3>
+
+<p>ออกแบบเว็บไซต์ให้สวยงาม</p>
+
+</div>
+
+<div class="card">
+
+<h3>JavaScript</h3>
+
+<p>เพิ่มลูกเล่นให้เว็บไซต์</p>
+
+</div>
+
+<div class="card">
+
+<h3>Microsoft Office</h3>
+
+<p>Word / PowerPoint / Excel</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Portfolio | นายปัญญาวุฒิ ไสยศาสตร์
+
+</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
+
+</html>

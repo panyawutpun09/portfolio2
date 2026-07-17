@@ -5,32 +5,30 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
 
     font-family:'Kanit',sans-serif;
-    color:#333;
     overflow-x:hidden;
+    min-height:100vh;
 
     background:linear-gradient(
-        135deg,
-        #8fd8ff,
-        #cdefff,
-        #ffffff,
-        #d8f3ff
+        -45deg,
+        #8fd3ff,
+        #ffd6f5,
+        #fff7b2,
+        #d2ffd2,
+        #d6e4ff
     );
 
     background-size:400% 400%;
-    animation:gradientBG 15s ease infinite;
+
+    animation:rainbow 15s ease infinite;
 
 }
 
-/* ---------- Gradient ---------- */
+/* พื้นหลังเปลี่ยนสี */
 
-@keyframes gradientBG{
+@keyframes rainbow{
 
     0%{
         background-position:0% 50%;
@@ -46,339 +44,139 @@ body{
 
 }
 
-/* ============================
-      SNOW EFFECT
-============================ */
+/* ===========================
+   เอฟเฟกต์วงกลมน่ารัก
+=========================== */
 
-.snow{
+body::before{
 
-    position:fixed;
-
-    width:100%;
-
-    height:100%;
-
-    top:0;
-
-    left:0;
-
-    pointer-events:none;
-
-    z-index:-1;
-
-}
-
-.snow span{
-
-    position:absolute;
-
-    width:10px;
-
-    height:10px;
-
-    background:white;
-
-    border-radius:50%;
-
-    opacity:.9;
-
-    animation:snow linear infinite;
-
-}
-
-/* ตำแหน่ง */
-
-.snow span:nth-child(1){left:5%;animation: snow 9s linear infinite;}
-.snow span:nth-child(2){left:15%;animation: snow 14s linear infinite;}
-.snow span:nth-child(3){left:25%;animation: snow 12s linear infinite;}
-.snow span:nth-child(4){left:35%;animation: snow 8s linear infinite;}
-.snow span:nth-child(5){left:45%;animation: snow 11s linear infinite;}
-.snow span:nth-child(6){left:55%;animation: snow 10s linear infinite;}
-.snow span:nth-child(7){left:65%;animation: snow 15s linear infinite;}
-.snow span:nth-child(8){left:75%;animation: snow 9s linear infinite;}
-.snow span:nth-child(9){left:85%;animation: snow 13s linear infinite;}
-.snow span:nth-child(10){left:95%;animation: snow 11s linear infinite;}
-
-@keyframes snow{
-
-    0%{
-
-        transform:translateY(-50px);
-
-        opacity:0;
-
-    }
-
-    20%{
-
-        opacity:1;
-
-    }
-
-    100%{
-
-        transform:translateY(110vh) translateX(40px);
-
-        opacity:0;
-
-    }
-
-}
-
-/* ============================
-      HEADER
-============================ */
-
-header{
+    content:"";
 
     position:fixed;
-
-    top:0;
-
-    width:100%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:18px 8%;
-
-    background:rgba(255,255,255,.75);
-
-    backdrop-filter:blur(15px);
-
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-    z-index:999;
-
-}
-
-.logo{
-
-    font-size:32px;
-
-    font-weight:bold;
-
-    color:#00aaff;
-
-}
-
-nav ul{
-
-    display:flex;
-
-    list-style:none;
-
-}
-
-nav ul li{
-
-    margin-left:30px;
-
-}
-
-nav ul li a{
-
-    text-decoration:none;
-
-    color:#333;
-
-    font-size:18px;
-
-    transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-    color:#00aaff;
-
-}
-
-/* ============================
-      HERO
-============================ */
-
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:140px 10%;
-
-}
-
-.hero-left{
-
-    width:55%;
-
-    animation:fadeLeft 1.2s;
-
-}
-
-.hero-left h3{
-
-    color:#00aaff;
-
-    font-size:28px;
-
-}
-
-.hero-left h1{
-
-    font-size:58px;
-
-    margin:20px 0;
-
-}
-
-.hero-left h2{
-
-    color:#666;
-
-    margin-bottom:20px;
-
-}
-
-.hero-left p{
-
-    line-height:1.8;
-
-    margin-bottom:30px;
-
-}
-
-.hero-right{
-
-    width:40%;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.hero-right img{
 
     width:350px;
 
     height:350px;
 
+    background:rgba(255,255,255,.35);
+
     border-radius:50%;
 
-    object-fit:cover;
+    top:-120px;
 
-    border:8px solid white;
+    left:-100px;
 
-    box-shadow:0 20px 45px rgba(0,170,255,.35);
+    filter:blur(50px);
 
-    animation:float 4s ease-in-out infinite;
+    animation:move1 8s infinite alternate;
 
-}
-
-@keyframes float{
-
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-18px);
-    }
-
-    100%{
-        transform:translateY(0);
-    }
+    z-index:-2;
 
 }
 
-@keyframes fadeLeft{
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:280px;
+
+    height:280px;
+
+    background:rgba(255,255,255,.25);
+
+    border-radius:50%;
+
+    right:-80px;
+
+    bottom:-80px;
+
+    filter:blur(50px);
+
+    animation:move2 10s infinite alternate;
+
+    z-index:-2;
+
+}
+
+@keyframes move1{
 
     from{
-
-        opacity:0;
-
-        transform:translateX(-80px);
-
+        transform:translateY(0);
     }
 
     to{
-
-        opacity:1;
-
-        transform:translateX(0);
-
+        transform:translateY(70px);
     }
 
 }
 
-/* ============================
-      BUTTON
-============================ */
+@keyframes move2{
 
-.button-group{
+    from{
+        transform:translateY(0);
+    }
 
-    margin-top:35px;
-
-}
-
-.btn{
-
-    display:inline-block;
-
-    padding:14px 35px;
-
-    border-radius:40px;
-
-    background:#00aaff;
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-    margin-right:15px;
+    to{
+        transform:translateY(-80px);
+    }
 
 }
 
-.btn:hover{
+/* ===========================
+   หัวใจลอย
+=========================== */
 
-    transform:translateY(-5px);
+.cute{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:-1;
+}
 
-    background:#0088dd;
+.cute span{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    font-size:22px;
+
+    animation:floatUp linear infinite;
 
 }
 
-.btn2{
+.cute span:nth-child(1){left:10%;animation-duration:8s;}
+.cute span:nth-child(2){left:25%;animation-duration:10s;}
+.cute span:nth-child(3){left:40%;animation-duration:7s;}
+.cute span:nth-child(4){left:60%;animation-duration:9s;}
+.cute span:nth-child(5){left:80%;animation-duration:11s;}
 
-    display:inline-block;
+@keyframes floatUp{
 
-    padding:14px 35px;
+    0%{
 
-    border:2px solid #00aaff;
+        transform:translateY(0) rotate(0deg);
 
-    border-radius:40px;
+        opacity:0;
 
-    color:#00aaff;
+    }
 
-    text-decoration:none;
+    15%{
 
-    transition:.3s;
+        opacity:1;
 
-}
+    }
 
-.btn2:hover{
+    100%{
 
-    background:#00aaff;
+        transform:translateY(-110vh) rotate(360deg);
 
-    color:white;
+        opacity:0;
+
+    }
 
 }
